@@ -1,0 +1,89 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "DevRadar",
+  "logo": {
+    "dark": "/logo-dark.svg",
+    "light": "/logo-light.svg"
+  },
+  "favicon": "/favicon.ico",
+  "colors": {
+    "primary": "#E3987F",
+    "dark": "#04165D",
+    "light": "#F2EDED",
+    "background": {
+      "dark": "#0A0A0A",
+      "light": "#FFFFFF"
+    },
+    "foreground": {
+      "dark": "#FFFFFF",
+      "light": "#04165D"
+    }
+  },
+  "topbarCtaButton": {
+    "type": "github",
+    "url": "https://github.com/startupsolellc/stackpilot"
+  },
+  "anchors": [
+    {
+      "name": "Website",
+      "icon": "globe",
+      "url": "https://devradar.dev"
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/startupsolellc/stackpilot"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "docs/introduction",
+        "docs/quickstart",
+        "docs/key-concepts"
+      ]
+    },
+    {
+      "group": "Features",
+      "pages": [
+        "docs/features/stack-wizard",
+        "docs/features/compatibility-checker",
+        "docs/features/ai-tools-directory",
+        "docs/features/content-hub",
+        "docs/features/project-management"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "docs/api/overview",
+        "docs/api/check-endpoint",
+        "docs/api/scan-endpoint",
+        "docs/api/badge-endpoint",
+        "docs/api/rate-limits",
+        "docs/api/errors"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        "docs/integrations/github",
+        "docs/integrations/cli",
+        "docs/integrations/webhooks"
+      ]
+    },
+    {
+      "group": "Contributing",
+      "pages": [
+        "docs/contributing/overview",
+        "docs/contributing/adding-compatibility-rules",
+        "docs/contributing/adding-ai-tools"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/startupsolellc/stackpilot",
+    "twitter": "https://twitter.com/devradar"
+  }
+}

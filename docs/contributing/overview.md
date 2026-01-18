@@ -26,16 +26,16 @@ If you don't have one, sign up at [github.com](https://github.com).
 
 ### 2. Join the Community
 
-- **Star the repo:** [github.com/startupsolellc/stackpilot](https://github.com/startupsolellc/stackpilot)
-- **Join discussions:** [github.com/startupsolellc/stackpilot/discussions](https://github.com/startupsolellc/stackpilot/discussions)
+- **Star the repo:** [github.com/devradar-dev/docs](https://github.com/devradar-dev/docs)
+- **Join discussions:** [github.com/devradar-dev/docs/discussions](https://github.com/devradar-dev/docs/discussions)
 - **Follow updates:** [@DevRadar on Twitter](https://twitter.com/devradar)
 
 ### 3. Choose Your Contribution Type
 
 - [Compatibility Rules](/docs/contributing/adding-compatibility-rules) - Submit compatibility data
 - [AI Tools](/docs/contributing/adding-ai-tools) - Add new tools to the directory
-- [Issues](https://github.com/startupsolellc/stackpilot/issues) - Report bugs or request features
-- [Discussions](https://github.com/startupsolellc/stackpilot/discussions) - Ask questions, share ideas
+- [Issues](https://github.com/devradar-dev/docs/issues) - Report bugs or request features
+- [Discussions](https://github.com/devradar-dev/docs/discussions) - Ask questions, share ideas
 
 ## Contribution Guidelines
 
@@ -123,14 +123,14 @@ Track your contribution status:
 
 ### Questions?
 
-- **GitHub Discussions:** [github.com/startupsolellc/stackpilot/discussions](https://github.com/startupsolellc/stackpilot/discussions)
+- **GitHub Discussions:** [github.com/devradar-dev/docs/discussions](https://github.com/devradar-dev/docs/discussions)
 - **Email:** support@devradar.dev
 - **Twitter:** [@DevRadar](https://twitter.com/devradar)
 
 ### Issues?
 
-- **Bug Reports:** [github.com/startupsolellc/stackpilot/issues/new?template=bug_report.md](https://github.com/startupsolellc/stackpilot/issues/new?template=bug_report.md)
-- **Feature Requests:** [github.com/startupsolellc/stackpilot/issues/new?template=feature_request.md](https://github.com/startupsolellc/stackpilot/issues/new?template=feature_request.md)
+- **Bug Reports:** [github.com/devradar-dev/docs/issues/new?template=bug_report.md](https://github.com/devradar-dev/docs/issues/new?template=bug_report.md)
+- **Feature Requests:** [github.com/devradar-dev/docs/issues/new?template=feature_request.md](https://github.com/devradar-dev/docs/issues/new?template=feature_request.md)
 
 ## What's Next
 

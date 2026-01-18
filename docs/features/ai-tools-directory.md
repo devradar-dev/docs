@@ -1,11 +1,11 @@
 ---
 title: AI Tools Directory
-description: Compare 50+ AI coding tools with detailed capability matrices. Filter by type, platform, and privacy model.
+description: Compare AI coding tools with detailed capability matrices. Filter by type, platform, and privacy model.
 ---
 
 # AI Tools Directory
 
-Explore and compare 50+ AI coding tools with detailed capability matrices. Find the perfect AI assistant for your development workflow.
+Explore and compare AI coding tools with detailed capability matrices. Find the perfect AI assistant for your development workflow.
 
 ## Overview
 

@@ -10,24 +10,49 @@ Generate SVG compatibility badges for your README, documentation, or website. Ba
 ## Endpoint
 
 ```
-GET /api/v1/badge
+GET /api/v1/badge/{slug}.svg
 ```
 
-## Request
+The badge endpoint uses a **slug-based URL format** - no query parameters required.
 
-### Query Parameters
+## URL Format
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `techA` | string | Yes | First technology name |
-| `techB` | string | Yes | Second technology name |
-| `style` | string | No | Badge style: `flat` (default) or `plastic` |
+The slug combines two technology names with a separator:
 
-### Example Requests
+### Format
 
 ```
-GET /api/v1/badge?techA=nextjs&techB=prisma
-GET /api/v1/badge?techA=nextjs&techB=prisma&style=plastic
+/api/v1/badge/{techA}-{techB}.svg
+```
+
+### Supported Separators
+
+You can use any of these separators between technology names:
+
+| Separator | Example |
+|-----------|---------|
+| `-` (dash) | `/api/v1/badge/nextjs-prisma.svg` |
+| `.` (dot) | `/api/v1/badge/nextjs.prisma.svg` |
+| `_` (underscore) | `/api/v1/badge/nextjs_prisma.svg` |
+
+The dash (`-`) separator is **recommended** for best compatibility.
+
+### Path vs Query Parameters
+
+**Important:** This endpoint uses path parameters, NOT query parameters.
+
+| Format | Example | Status |
+|--------|---------|--------|
+| **Slug-based** (correct) | `/api/v1/badge/nextjs-prisma.svg` | ✅ Use this |
+| Query params (incorrect) | `/api/v1/badge?techA=nextjs&techB=prisma` | ❌ Not supported |
+
+### Examples
+
+```
+GET /api/v1/badge/nextjs-prisma.svg
+GET /api/v1/badge/react-vercel.svg
+GET /api/v1/badge/tailwind-vite.svg
+GET /api/v1/badge/supabase-next.auth.svg
 ```
 
 ## Response
@@ -56,7 +81,7 @@ Badges use GitHub-style colors:
 
 ## Badge Styles
 
-### Flat (Default)
+### Default Badge
 
 Classic flat badge design:
 
@@ -64,47 +89,37 @@ Classic flat badge design:
 [ compatibility | compatible ]
 ```
 
-```
-GET /api/v1/badge?techA=nextjs&techB=prisma
-```
-
-### Plastic
-
-Subtle gradient effect:
-
-```
-[ compatibility | compatible ] (with gradient)
-```
-
-```
-GET /api/v1/badge?techA=nextjs&techB=prisma&style=plastic
-```
-
 ## Usage Examples
 
 ### Markdown (GitHub, GitLab, etc.)
 
 ```markdown
-![Next.js + Prisma](https://devradar.dev/api/v1/badge?techA=nextjs&techB=prisma)
+![Next.js + Prisma](https://devradar.dev/api/v1/badge/nextjs-prisma.svg)
 ```
 
 ### HTML
 
 ```html
-<img src="https://devradar.dev/api/v1/badge?techA=nextjs&techB=prisma" alt="Next.js + Prisma compatibility">
+<img src="https://devradar.dev/api/v1/badge/nextjs-prisma.svg" alt="Next.js + Prisma compatibility">
 ```
 
 ### reStructuredText (ReadTheDocs)
 
 ```rst
-.. image:: https://devradar.dev/api/v1/badge?techA=nextjs&techB=prisma
+.. image:: https://devradar.dev/api/v1/badge/nextjs-prisma.svg
    :alt: Next.js + Prisma compatibility
 ```
 
 ### AsciiDoc
 
 ```asciidoc
-image:https://devradar.dev/api/v1/badge?techA=nextjs&techB=prisma["Next.js + Prisma compatibility"]
+image:https://devradar.dev/api/v1/badge/nextjs-prisma.svg["Next.js + Prisma compatibility"]
+```
+
+### Asciidoc with Link
+
+```asciidoc
+image:https://devradar.dev/api/v1/badge/nextjs-prisma.svg[link=https://devradar.dev/check/nextjs/prisma]
 ```
 
 ## Example README Section
@@ -114,11 +129,21 @@ image:https://devradar.dev/api/v1/badge?techA=nextjs&techB=prisma["Next.js + Pri
 
 | Component | Technology | Compatibility |
 |-----------|------------|---------------|
-| Framework | [Next.js](https://nextjs.org) | ![Framework](https://devradar.dev/api/v1/badge?techA=nextjs&techB=vercel) |
-| Database | [Prisma](https://prisma.io) | ![Database](https://devradar.dev/api/v1/badge?techA=nextjs&techB=prisma) |
-| Auth | [NextAuth](https://next-auth.js.org) | ![Auth](https://devradar.dev/api/v1/badge?techA=nextjs&techB=next-auth) |
-| Styling | [Tailwind](https://tailwindcss.com) | ![Styling](https://devradar.dev/api/v1/badge?techA=nextjs&techB=tailwind) |
+| Framework | [Next.js](https://nextjs.org) | ![Framework](https://devradar.dev/api/v1/badge/nextjs-vercel.svg) |
+| Database | [Prisma](https://prisma.io) | ![Database](https://devradar.dev/api/v1/badge/nextjs-prisma.svg) |
+| Auth | [Auth.js](https://authjs.dev) | ![Auth](https://devradar.dev/api/v1/badge/nextjs-authjs.svg) |
+| Styling | [Tailwind](https://tailwindcss.com) | ![Styling](https://devradar.dev/api/v1/badge/nextjs-tailwind.svg) |
 ```
+
+## Linking to Full Details
+
+Wrap badges in links to detailed compatibility information:
+
+```markdown
+[![Next.js + Prisma](https://devradar.dev/api/v1/badge/nextjs-prisma.svg)](https://devradar.dev/check/nextjs/prisma)
+```
+
+This creates a clickable badge that takes users to the full compatibility report.
 
 ## Caching
 
@@ -134,18 +159,36 @@ This ensures fast loading and reduces API load while keeping badges reasonably f
 
 ## Error Responses
 
-When parameters are invalid, the endpoint returns an error (not an SVG):
+When the slug format is invalid or technologies cannot be parsed, a generic "Unknown" badge is returned:
 
-### 400 Bad Request
+### Unknown Badge
 
-```json
-{
-  "version": "1.0",
-  "error": {
-    "code": "INVALID_INPUT",
-    "message": "Both techA and techB are required."
-  }
-}
+The endpoint always returns valid SVG (even for errors):
+
+```
+[ compatibility | unknown ]
+```
+
+This ensures your README never breaks due to missing compatibility data.
+
+## Hybrid Lookup
+
+The badge endpoint uses intelligent fallback:
+
+1. **Slug Match** - First tries to find a pre-computed compatibility slug
+2. **Pair Match** - Falls back to parsing the slug and finding a matching pair
+
+This means badges work even without explicit slugs in the database.
+
+### Example: Parsed Slug
+
+```
+Request: /api/v1/badge/nextjs-prisma.svg
+
+1. Try slug match: "nextjs-prisma" in database
+2. If not found, parse into: {techA: "nextjs", techB: "prisma"}
+3. Search for any rule with nextjs + prisma (bidirectional)
+4. Generate badge from result
 ```
 
 ## Rate Limiting
@@ -165,17 +208,27 @@ Add badges for your key technology pairs to help contributors understand your st
 
 ### 2. Link to Full Details
 
-Wrap badges in links to detailed compatibility information:
+Always wrap badges in links to detailed compatibility information:
 
 ```markdown
-[![Next.js + Prisma](https://devradar.dev/api/v1/badge?techA=nextjs&techB=prisma)](https://devradar.dev/check/nextjs/prisma)
+[![Next.js + Prisma](https://devradar.dev/api/v1/badge/nextjs-prisma.svg)](https://devradar.dev/check/nextjs/prisma)
 ```
 
 ### 3. Consider Your Audience
 
 For internal docs, badges provide quick verification. For public READMEs, they signal compatibility awareness.
 
-### 4. Update When Stacks Change
+### 4. Use Recommended Separator
+
+The dash (`-`) separator is most reliable:
+
+```
+✅ /api/v1/badge/nextjs-prisma.svg (recommended)
+⚠️ /api/v1/badge/nextjs.prisma.svg (works but less common)
+⚠️ /api/v1/badge/nextjs_prisma.svg (works but less common)
+```
+
+### 5. Update When Stacks Change
 
 When you add or change technologies, update your badges accordingly.
 

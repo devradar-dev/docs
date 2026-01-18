@@ -141,16 +141,45 @@ Share your stack with team members or the community:
 4. Share with your team (requires DevRadar login)
 
 ### Public Sharing
+
+Share your project publicly with a unique URL - no login required for viewers:
+
 1. Open your project
-2. Click **Make Public**
-3. Copy the public URL
-4. Share anywhere - no login required
+2. Click **Share** or **Make Public**
+3. Copy the public URL (format: `devradar.dev/p/{publicId}`)
+4. Share anywhere - on social media, in documentation, or with stakeholders
+
+**Public share pages display:**
+- Project name and description
+- Compatibility score with visual indicator
+- Full technology stack breakdown
+- Project requirements and platforms
+- View count and creation date
+
+**Example:** If your public ID is `abc123`, share:
+```
+https://devradar.dev/p/abc123
+```
+
+Anyone with the link can view your stack without signing in.
 
 ### Embed Badge
-Add a compatibility badge to your README:
+Add compatibility badges to your README:
 
 ```markdown
-![Stack](https://devradar.dev/api/v1/badge?project=your-project-id)
+![Next.js + Prisma](https://devradar.dev/api/v1/badge/nextjs-prisma.svg)
+```
+
+For multiple badges in a table format:
+
+```markdown
+## Tech Stack Compatibility
+
+| Component | Badge |
+|-----------|-------|
+| Framework | ![Next.js + Vercel](https://devradar.dev/api/v1/badge/nextjs-vercel.svg) |
+| Database | ![Next.js + Prisma](https://devradar.dev/api/v1/badge/nextjs-prisma.svg) |
+| Styling | ![Next.js + Tailwind](https://devradar.dev/api/v1/badge/nextjs-tailwind.svg) |
 ```
 
 ## Project Settings

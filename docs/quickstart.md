@@ -1,6 +1,6 @@
 ---
 title: Quick Start
-description: Get started with DevRadar in 5 minutes. Sign in, check your first tech stack, and explore our AI tools directory.
+description: Get started with DevRadar in 5 minutes. Check compatibility, scan your project, and explore our AI tools directory.
 ---
 
 # Quick Start
@@ -9,25 +9,18 @@ Get up and running with DevRadar in under 5 minutes.
 
 ## Prerequisites
 
-- A Google account (for authentication)
+- A Google account (for saving projects)
 - A modern web browser
 
-## Step 1: Sign In
-
-1. Visit [devradar.dev](https://devradar.dev)
-2. Click **Sign In** in the top right
-3. Authenticate with your Google account
-
-That's it - no additional setup required!
-
-## Step 2: Your First Compatibility Check
+## Step 1: Check Technology Compatibility
 
 The quickest way to understand DevRadar is to try a compatibility check:
 
-1. Navigate to the **Check** page from the navigation
-2. Enter your first technology (e.g., `nextjs`)
-3. Enter your second technology (e.g., `prisma`)
-4. Click **Check Compatibility**
+1. Visit [devradar.dev](https://devradar.dev)
+2. Navigate to the **Check** page from the navigation
+3. Enter your first technology (e.g., `nextjs`)
+4. Enter your second technology (e.g., `prisma`)
+5. Click **Check Compatibility**
 
 You'll see an instant result with:
 - **Compatibility Status** - Compatible, Partial, Incompatible, Deprecated, or Unknown
@@ -35,7 +28,21 @@ You'll see an instant result with:
 - **Detailed Message** - What works, what doesn't, and why
 - **Workarounds** - Alternative approaches when available
 
-## Step 3: Explore the AI Tools Directory
+## Step 2: Scan Your Project
+
+Already have a project? Check your entire tech stack at once:
+
+1. Navigate to the **Scan** page at [devradar.dev/scan](https://devradar.dev/scan)
+2. Upload your `package.json` file
+3. View automatic compatibility analysis
+
+The scanner detects:
+- All dependencies in your project
+- Potential compatibility issues
+- Edge Runtime conflicts
+- Database pairing problems
+
+## Step 3: Explore AI Tools Directory
 
 Discover AI coding tools that work with your stack:
 
@@ -46,30 +53,31 @@ Discover AI coding tools that work with your stack:
    - Privacy model
 3. Click any tool to see detailed comparisons
 
-## Step 4: Build Your Stack (Optional)
+## Step 4: Build Your Stack with the Wizard
 
-For a more comprehensive approach, use the Stack Wizard:
+For a comprehensive approach, use the Stack Wizard to build and validate your complete stack:
 
-1. Click **New Project** on your dashboard
+1. Navigate to [/wizard](https://devradar.dev/wizard) (sign in required)
 2. Choose your development approach:
    - **Track A**: AI-Assisted Development (select an AI tool first)
    - **Track B**: Traditional Development (start with your framework)
 3. Follow the 5-step guided process
 4. Get a compatibility score for your complete stack
+5. Save your project to track changes over time
 
 ## Common Use Cases
 
 ### "I'm starting a new project"
-Use the **Stack Wizard** to build and validate your complete tech stack.
+Use the **Stack Wizard** at [/wizard](https://devradar.dev/wizard) to build and validate your complete tech stack.
 
 ### "I want to check if X works with Y"
-Use the **Compatibility Checker** for instant pair verification.
+Use the **Compatibility Checker** at [/check](https://devradar.dev/check) for instant pair verification.
 
 ### "I'm evaluating AI coding tools"
-Browse the **AI Tools Directory** and compare capabilities side-by-side.
+Browse the **AI Tools Directory** at [/tools](https://devradar.dev/tools) and compare capabilities side-by-side.
 
 ### "I want to check my existing project"
-Upload your `package.json` to the **Project Scanner** for analysis.
+Upload your `package.json` to the **Stack Scanner** at [/scan](https://devradar.dev/scan) for analysis.
 
 ## What's Next
 
@@ -79,4 +87,4 @@ Upload your `package.json` to the **Project Scanner** for analysis.
 
 ---
 
-**Need help?** Check our [Features documentation](/docs/features/stack-wizard) or [join our community](https://github.com/startupsolellc/stackpilot).
+**Need help?** Check our [Features documentation](/docs/features/stack-wizard) or [join our community](https://github.com/devradar-dev).

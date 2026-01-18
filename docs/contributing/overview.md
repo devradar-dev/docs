@@ -28,7 +28,7 @@ If you don't have one, sign up at [github.com](https://github.com).
 
 - **Star the repo:** [github.com/devradar-dev/website](https://github.com/devradar-dev/website)
 - **Join discussions:** [github.com/devradar-dev/website/discussions](https://github.com/devradar-dev/website/discussions)
-- **Follow updates:** [@DevRadar on Twitter](https://twitter.com/devradar)
+- **Follow updates:** [@devradardev on Twitter](https://x.com/devradardev)
 
 ### 3. Choose Your Contribution Type
 
@@ -125,7 +125,7 @@ Track your contribution status:
 
 - **GitHub Discussions:** [github.com/devradar-dev/website/discussions](https://github.com/devradar-dev/website/discussions)
 - **Email:** support@devradar.dev
-- **Twitter:** [@DevRadar](https://twitter.com/devradar)
+- **Twitter:** [@devradardev](https://x.com/devradardev)
 
 ### Issues?
 

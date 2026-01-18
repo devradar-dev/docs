@@ -281,7 +281,7 @@ Webhooks are under active development. To be notified when they launch:
 
 1. **Watch the repository** - [github.com/devradar-dev/website](https://github.com/devradar-dev/website)
 2. **Join the waitlist** - [devradar.dev/webhooks-waitlist](https://devradar.dev/webhooks-waitlist)
-3. **Follow us** - [@DevRadar](https://twitter.com/devradar) on Twitter
+3. **Follow us** - [@DevRadar](https://x.com/devradardev) on Twitter
 
 ## What's Next
 

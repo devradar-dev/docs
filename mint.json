@@ -13,7 +13,7 @@
   },
   "topbarCtaButton": {
     "type": "github",
-    "url": "https://github.com/devradar-dev"
+    "url": "https://github.com/devradar-dev/website"
   },
   "anchors": [
     {
@@ -24,7 +24,7 @@
     {
       "name": "GitHub",
       "icon": "github",
-      "url": "https://github.com/devradar-dev"
+      "url": "https://github.com/devradar-dev/website"
     }
   ],
   "navigation": [
@@ -75,7 +75,7 @@
     }
   ],
   "footerSocials": {
-    "github": "https://github.com/devradar-dev",
-    "twitter": "https://twitter.com/devradar"
+    "github": "https://github.com/devradar-dev/website",
+    "twitter": "https://x.com/devradardev"
   }
 }

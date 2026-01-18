@@ -102,7 +102,7 @@ This integration is under active development. To be notified when it launches:
 
 1. **Watch the repository** - [github.com/devradar-dev/website](https://github.com/devradar-dev/website)
 2. **Join the waitlist** - [devradar.dev/github-waitlist](https://devradar.dev/github-waitlist)
-3. **Follow us** - [@DevRadar](https://twitter.com/devradar) on Twitter
+3. **Follow us** - [@devradardev](https://x.com/devradardev) on Twitter
 
 ## In the Meantime
 

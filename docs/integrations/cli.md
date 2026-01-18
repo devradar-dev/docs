@@ -236,7 +236,7 @@ pipeline {
 
 This CLI is under active development. To be notified when it launches:
 
-1. **Watch the repository** - [github.com/devradar-dev/docs](https://github.com/devradar-dev/docs)
+1. **Watch the repository** - [github.com/devradar-dev/website](https://github.com/devradar-dev/website)
 2. **Join the waitlist** - [devradar.dev/cli-waitlist](https://devradar.dev/cli-waitlist)
 3. **Follow us** - [@DevRadar](https://twitter.com/devradar) on Twitter
 
@@ -270,7 +270,7 @@ Help us prioritize features:
 - **Output formats?** Human-readable, JSON, others?
 - **Must-have features?** What's blocking your adoption?
 
-Share feedback: [github.com/devradar-dev/docs/discussions](https://github.com/devradar-dev/docs/discussions)
+Share feedback: [github.com/devradar-dev/website/discussions](https://github.com/devradar-dev/website/discussions)
 
 ## What's Next
 

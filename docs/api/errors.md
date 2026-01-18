@@ -328,7 +328,7 @@ If you encounter errors consistently:
 ### Support Contact
 
 - **Email:** support@devradar.dev
-- **GitHub:** [github.com/startupsolellc/stackpilot/issues](https://github.com/startupsolellc/stackpilot/issues)
+- **GitHub:** [github.com/devradar-dev/website/issues](https://github.com/devradar-dev/website/issues)
 - **Include in report:**
   - Error code
   - Request details (sanitize sensitive data)

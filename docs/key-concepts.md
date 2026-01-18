@@ -173,4 +173,4 @@ Badge colors match status levels:
 
 ---
 
-**Still have questions?** [Check our Features docs](/docs/features/stack-wizard) or [join the community](https://github.com/startupsolellc/stackpilot).
+**Still have questions?** [Check our Features docs](/docs/features/stack-wizard) or [join our community](https://github.com/devradar-dev/website).

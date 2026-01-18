@@ -371,4 +371,4 @@ Tool information changes - help keep it current:
 
 ---
 
-**Submit now:** [Open an Issue](https://github.com/devradar-dev/docs/issues/new) →
+**Submit now:** [Open an Issue](https://github.com/devradar-dev/website/issues/new) →

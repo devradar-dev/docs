@@ -26,16 +26,16 @@ If you don't have one, sign up at [github.com](https://github.com).
 
 ### 2. Join the Community
 
-- **Star the repo:** [github.com/devradar-dev/docs](https://github.com/devradar-dev/docs)
-- **Join discussions:** [github.com/devradar-dev/docs/discussions](https://github.com/devradar-dev/docs/discussions)
+- **Star the repo:** [github.com/devradar-dev/website](https://github.com/devradar-dev/website)
+- **Join discussions:** [github.com/devradar-dev/website/discussions](https://github.com/devradar-dev/website/discussions)
 - **Follow updates:** [@DevRadar on Twitter](https://twitter.com/devradar)
 
 ### 3. Choose Your Contribution Type
 
 - [Compatibility Rules](/docs/contributing/adding-compatibility-rules) - Submit compatibility data
 - [AI Tools](/docs/contributing/adding-ai-tools) - Add new tools to the directory
-- [Issues](https://github.com/devradar-dev/docs/issues) - Report bugs or request features
-- [Discussions](https://github.com/devradar-dev/docs/discussions) - Ask questions, share ideas
+- [Issues](https://github.com/devradar-dev/website/issues) - Report bugs or request features
+- [Discussions](https://github.com/devradar-dev/website/discussions) - Ask questions, share ideas
 
 ## Contribution Guidelines
 
@@ -123,14 +123,14 @@ Track your contribution status:
 
 ### Questions?
 
-- **GitHub Discussions:** [github.com/devradar-dev/docs/discussions](https://github.com/devradar-dev/docs/discussions)
+- **GitHub Discussions:** [github.com/devradar-dev/website/discussions](https://github.com/devradar-dev/website/discussions)
 - **Email:** support@devradar.dev
 - **Twitter:** [@DevRadar](https://twitter.com/devradar)
 
 ### Issues?
 
-- **Bug Reports:** [github.com/devradar-dev/docs/issues/new?template=bug_report.md](https://github.com/devradar-dev/docs/issues/new?template=bug_report.md)
-- **Feature Requests:** [github.com/devradar-dev/docs/issues/new?template=feature_request.md](https://github.com/devradar-dev/docs/issues/new?template=feature_request.md)
+- **Bug Reports:** [github.com/devradar-dev/website/issues/new?template=bug_report.md](https://github.com/devradar-dev/website/issues/new?template=bug_report.md)
+- **Feature Requests:** [github.com/devradar-dev/website/issues/new?template=feature_request.md](https://github.com/devradar-dev/website/issues/new?template=feature_request.md)
 
 ## What's Next
 

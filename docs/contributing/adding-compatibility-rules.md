@@ -104,7 +104,7 @@ Evidence: https://mui.com/material-ui/guides/nextjs-app-router/
 
 ### Method 1: GitHub Issue (Recommended)
 
-1. Go to [github.com/startupsolellc/stackpilot/issues](https://github.com/startupsolellc/stackpilot/issues)
+1. Go to [github.com/devradar-dev/website/issues](https://github.com/devradar-dev/website/issues)
 2. Click "New Issue"
 3. Use "Compatibility Data" template
 4. Fill in all fields
@@ -142,7 +142,7 @@ Evidence: https://mui.com/material-ui/guides/nextjs-app-router/
 
 For complex submissions or questions:
 
-1. Go to [github.com/startupsolellc/stackpilot/discussions](https://github.com/startupsolellc/stackpilot/discussions)
+1. Go to [github.com/devradar-dev/website/discussions](https://github.com/devradar-dev/website/discussions)
 2. Start a new discussion
 3. Use "Compatibility Data" category
 4. Post your submission
@@ -317,4 +317,4 @@ Tested with App Router (not Pages Router).
 
 ---
 
-**Submit now:** [Open an Issue](https://github.com/startupsolellc/stackpilot/issues/new) →
+**Submit now:** [Open an Issue](https://github.com/devradar-dev/website/issues/new) →

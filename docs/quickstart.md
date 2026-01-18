@@ -87,4 +87,4 @@ Upload your `package.json` to the **Stack Scanner** at [/scan](https://devradar.
 
 ---
 
-**Need help?** Check our [Features documentation](/docs/features/stack-wizard) or [join our community](https://github.com/devradar-dev).
+**Need help?** Check our [Features documentation](/docs/features/stack-wizard) or [join our community](https://github.com/devradar-dev/website).

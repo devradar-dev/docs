@@ -13,7 +13,7 @@
   },
   "topbarCtaButton": {
     "type": "github",
-    "url": "https://github.com/startupsolellc/stackpilot"
+    "url": "https://github.com/devradar-dev"
   },
   "anchors": [
     {
@@ -24,7 +24,7 @@
     {
       "name": "GitHub",
       "icon": "github",
-      "url": "https://github.com/startupsolellc/stackpilot"
+      "url": "https://github.com/devradar-dev"
     }
   ],
   "navigation": [
@@ -75,7 +75,7 @@
     }
   ],
   "footerSocials": {
-    "github": "https://github.com/startupsolellc/stackpilot",
+    "github": "https://github.com/devradar-dev",
     "twitter": "https://twitter.com/devradar"
   }
 }

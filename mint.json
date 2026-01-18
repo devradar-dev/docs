@@ -9,15 +9,7 @@
   "colors": {
     "primary": "#E3987F",
     "dark": "#04165D",
-    "light": "#F2EDED",
-    "background": {
-      "dark": "#0A0A0A",
-      "light": "#FFFFFF"
-    },
-    "foreground": {
-      "dark": "#FFFFFF",
-      "light": "#04165D"
-    }
+    "light": "#F2EDED"
   },
   "topbarCtaButton": {
     "type": "github",
